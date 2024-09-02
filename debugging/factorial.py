@@ -7,18 +7,6 @@ def factorial(n):
         result *= n
         n -= 1
     return result
-
-def main():
-    try:
-        n = int(input("Enter a positive integer: "))
-        if n < 0:
-            print("Please enter a positive integer.")
-        else:
-            print(f"The factorial of {n} is {factorial(n)}")
-    except ValueError:
-        print("Invalid input. Please enter an integer.")
-
-if __name__ == "__main__":
-    main()
-
-
+8
+f = factorial(int(sys.argv[1]))
+print(f"{f}")
